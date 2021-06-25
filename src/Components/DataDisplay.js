@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/dataDisplay.css'
+import './styles/dataDisplay.css';
 
 export class DataDisplay extends Component {
 
@@ -18,35 +18,36 @@ export class DataDisplay extends Component {
   componentDidMount() {
     this.intervalId = setInterval(() => this.ticker(), 25);
   }
+
   componentWillUnmount() {
     clearInterval(this.intervalId);
   }
 
   ticker = () => {
-    this.setState({ value : this.props.value });
+    this.setState ({ value: this.props.value });
     if (this.props.animateDisplay && this.state.output <= this.state.value - 1) {
       this.setState(prev => ({
-        output : prev.output + 1,
-        final : this.state.output,
-        outerColor : this.displayColor(this.state.final)
+        output: prev.output + 1,
+        final: this.state.output,
+        outerColor: this.displayColor(this.state.final)
       }));
-    this.progressBar();
+      this.progressBar();
 
     }
-    if (this.state.output === this.state.threat - 1) {
-      this.setState = ({
-        final : this.state.output,
-        output : 0
+    if (this.state.output === this.state.value - 1) {
+      this.setState({
+        final: this.state.output,
+        output: 0
       });
-      this.props.stopAnimate();
+      this.props.toggleAnimation();
     }
   }
 
   progressBar = () => {
-    if (this.state.output < 51) 
-      this.setState({ bar: 'progress-circle p' + this.state.output});
+    if (this.state.output < 51)
+      this.setState({ bar: 'progress-circle p' + this.state.output });
     else
-      this.setState({ bar: 'progress-circle over50 p' + this.state.output});
+      this.setState({ bar: 'progress-circle over50 p' + this.state.output });
   }
 
   displayColor = (value) => {
@@ -54,19 +55,20 @@ export class DataDisplay extends Component {
     if (value >= 0 && value < 25)
       color = 'green';
     else if (value > 24 && value < 50)
-        color = 'yellow';
+      color = 'yellow';
     else if (value > 49 && value < 75)
-        color = 'orange';
+      color = 'orange';
     else if (value > 74)
-        color = 'red';
+      color = 'red';
 
-    this.setState({ 
-      textColor : 'span-' + color,
+    this.setState({
+      textColor: 'span-' + color,
       outerColor: 'outer-color-' + color
     });
   }
 
   render() {
+    console.log(this.state.value);
     return (
       <section className="circle-prog-widget">
         <div id="circle-container" className={this.state.outerColor}>
@@ -83,6 +85,6 @@ export class DataDisplay extends Component {
       </section>
     );
   }
-}   
+}
 
 export default DataDisplay;

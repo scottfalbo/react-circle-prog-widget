@@ -11,7 +11,7 @@ export class Controller extends Component {
     }
 
     updateValue = (input) => {
-        this.setState({ threatLevel: input });
+        this.setState({ value: input });
     }
 
     animateDisplay = () => {
@@ -25,7 +25,12 @@ export class Controller extends Component {
                     updateValue={this.updateValue}
                     animateDisplay={this.animateDisplay}
                 />
-                <DataDisplay />
+                <DataDisplay
+                    value={this.state.value}
+                    updateValue={this.updateValue}
+                    animateDisplay={this.state.animateDisplay}
+                    toggleAnimation={this.animateDisplay}
+                />
             </div>
         )
     }
