@@ -1,5 +1,6 @@
-import './App.css';
+import React from 'react';
 import Controller from './Components/Controller'
+import './App.css';
 
 const App = () => {
   <main>
