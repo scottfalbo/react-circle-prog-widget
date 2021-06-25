@@ -16,6 +16,7 @@ export class DataDisplay extends Component {
   }
 
   componentDidMount() {
+    //Set interval speed here to control how quickly the display counts
     this.intervalId = setInterval(() => this.ticker(), 25);
   }
 
@@ -68,7 +69,6 @@ export class DataDisplay extends Component {
   }
 
   render() {
-    console.log(this.state.value);
     return (
       <section className="circle-prog-widget">
         <div id="circle-container" className={this.state.outerColor}>

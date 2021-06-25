@@ -20,7 +20,7 @@ export class Controller extends Component {
 
     render() {
         return (
-            <div>
+            <div className="make-box">
                 <DataInput
                     updateValue={this.updateValue}
                     animateDisplay={this.animateDisplay}

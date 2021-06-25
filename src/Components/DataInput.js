@@ -23,6 +23,7 @@ export class DataInput extends Component {
     async fakeQuery() {
         // Replace the random number generator with your business logic
         const result = Math.floor((Math.random() * (100 - 1) + 1));
+
         this.props.updateValue(result);
         this.props.animateDisplay();
         this.setState({ query: '' });
@@ -31,9 +32,10 @@ export class DataInput extends Component {
     render() {
         return (
             <div>
-                <p>Click the button to generate a random number between 1 and 100.</p>
+                <p>Click the button to generate a random number.</p>
+                {/* input field to take in a query if needed */}
                 {/* <input type="text" value={this.state.query} onChange={this.handleInput.bind(this)} placeholder="input" required /> */}
-                <button onClick={this.handleSubmission.bind(this)}>Submit</button>
+                <button className="make-box" onClick={this.handleSubmission.bind(this)}>Generate Number</button>
             </div>
         )
     }
