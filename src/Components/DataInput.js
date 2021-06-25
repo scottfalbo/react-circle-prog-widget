@@ -5,7 +5,7 @@ export class DataInput extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            query : '',
+            query: '',
         };
     }
 
@@ -16,12 +16,10 @@ export class DataInput extends Component {
     }
 
     handleSubmission() {
-      // This set state disables the user input, remove to require a query if needed
-      this.setState({
-        query : 'whatever'
-      })
-      
-        if(this.state.query !== '')
+        // This set state disables the user input, remove to require a query if needed
+        this.setState({ query: 'whatever' })
+
+        if (this.state.query !== '')
             this.fakeQuery(this.state.query);
     }
 
@@ -31,20 +29,18 @@ export class DataInput extends Component {
 
         this.props.updateValue(result);
         this.props.animateDisplay();
-        this.setState({
-            query : ''
-        });
+        this.setState({ query: '' });
     }
 
     render() {
         return (
             <div>
-                <input type="text" value={this.state.query} onChange={this.handleInput.bind(this)} placeholder="input" required/>
+                <input type="text" value={this.state.query} onChange={this.handleInput.bind(this)} placeholder="input" required />
                 <button onClick={this.handleSubmission.bind(this)}>Submit</button>
             </div>
         )
     }
-    
+
 }
 
 export default DataInput;

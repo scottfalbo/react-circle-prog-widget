@@ -4,33 +4,29 @@ import DataDisplay from './DataDisplay';
 import './styles/controller.css';
 
 export class Controller extends Component {
-  
+
     state = {
         value: -1,
         animateDisplay: false
     }
 
     updateValue = (input) => {
-        this.setState({
-            threatLevel : input
-        });
+        this.setState({ threatLevel: input });
     }
 
     animateDisplay = () => {
-        this.setState({
-            animateDisplay: this.state.animateDisplay ? false : true
-        })
+        this.setState({ animateDisplay: this.state.animateDisplay ? false : true })
     }
 
     render() {
         return (
-          <div>
-            <DataInput 
-              updateValue = { this.updateValue }
-              animateDisplay = { this.animateDisplay }
-            />
-            <DataDisplay />
-          </div>
+            <div>
+                <DataInput
+                    updateValue={this.updateValue}
+                    animateDisplay={this.animateDisplay}
+                />
+                <DataDisplay />
+            </div>
         )
     }
 }
