@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DataInput from './DataInput';
 import DataDisplay from './DataDisplay';
+import './styles/controller.css';
 
 export class Controller extends Component {
   
@@ -24,7 +25,10 @@ export class Controller extends Component {
     render() {
         return (
           <div>
-            <DataInput />
+            <DataInput 
+              updateValue = { this.updateValue }
+              animateDisplay = { this.animateDisplay }
+            />
             <DataDisplay />
           </div>
         )
