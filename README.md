@@ -10,7 +10,8 @@
 
 ## Summary
 
-<img src="./assets/circle-prog-sample.png" width=90%>
+
+<img src="./assets/circle-prog-sample.png" width=70%>
 
 This widget was created using React and displays a circular progression bar that changes colors based on value.  The sample deployment is setup with a random number generator for display purposes, but has a commented out input element for user input to customize the source of the display value.
 
