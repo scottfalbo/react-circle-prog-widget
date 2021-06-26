@@ -20,7 +20,7 @@ export class DataInput extends Component {
             this.fakeQuery(this.state.query);
     }
 
-    async fakeQuery() {
+    async fakeQuery(query) {
         // Replace the random number generator with your business logic
         const result = Math.floor((Math.random() * (100 - 1) + 1));
 
