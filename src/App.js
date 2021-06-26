@@ -23,9 +23,8 @@ export class App extends Component {
         <p>This circular progress widget takes in a value between 1 and 100.  The progress wheel then loads and counts up to the value, changing colors every 25%.  Please see the README for implementation instructions.</p>
         <Controller />
         <button className="make-box" onClick={this.handleSubmission.bind(this)}>About</button>
-        <div className={this.state.showAbout ? "screen-dim" : "screen-dim hide-me"}>
+        <div className={this.state.showAbout ? "screen-dim" : "screen-dim"}>
           <section className="about-me">
-            <div>
               <figure>
                 <img src="./images/selfie.jpg" alt="Scott Falbo" />
               </figure>
@@ -47,7 +46,6 @@ export class App extends Component {
                   </li>
                 </ul>
               </section>
-            </div>
             <article>Hello, my name is Scott Falbo, I'm a software developer and artist in Seattle.
               <br/>
               I'm a huge gamer nerd that loves coding.  Learning a new language or technologies to solve a problem domain is basically studying ancient tongues to scribe spells.  HttpRequest, more like Neo-Electrical Telekinesis.  Writing code is wizardry, and who doesn't want to be a wizard.

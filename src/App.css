@@ -50,6 +50,7 @@ button {
 
 ul {
   list-style: none;
+  padding: 5px;
 }
 
 .screen-dim {
@@ -68,53 +69,24 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  display: grid;
-  grid-template-columns: 2% 90% 8%;
-  grid-template-rows: min-content min-content 50px;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
-  min-width: 360px;
   max-width: 400px;
+  text-align: center;
 }
 
-.about-me > div:first-child {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr;
-}
-  .about-me > div:first-child figure {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
     figure img {
       border-radius: 50%;
       border: 2px solid #000;
     }
 
-  .about-me > div:first-child .social {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content;
-
-  }
-    .social ul:first-child{
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
     .social a {
       font-family: 'Exo', sans-serif;
       text-decoration: none;
       font-size: 1.1em;
     }
-    .social ul:last-child{
-      grid-column: 1/2;
-      grid-row: 2/3;
-    }
+
     .social ul:last-child > li{
       display: inline-block;
       margin: 0px 10px;
@@ -123,8 +95,7 @@ ul {
       width: 60px;
     }
 .about-me button {
-  grid-column: 2/3;
-  grid-row: 3/4;
+
   width: 100px;
   height: 40px;
   line-height: 20px;
@@ -133,12 +104,11 @@ ul {
 
 .about-me > article {
   padding: 10px;
-  grid-column: 2/3;
-  grid-row: 2/3;
   white-space: pre-wrap;
   overflow-y: scroll;
   height: 300px;
-  width: 100%;
+  width: 90%;
+  text-align: left;
 }
 
 .hide-me {
