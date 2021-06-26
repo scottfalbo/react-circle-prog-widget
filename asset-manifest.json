@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-circle-prog-widget/static/css/main.46db552a.chunk.css",
-    "main.js": "/react-circle-prog-widget/static/js/main.8cab70c8.chunk.js",
-    "main.js.map": "/react-circle-prog-widget/static/js/main.8cab70c8.chunk.js.map",
+    "main.css": "/react-circle-prog-widget/static/css/main.fdfb1805.chunk.css",
+    "main.js": "/react-circle-prog-widget/static/js/main.416c5acb.chunk.js",
+    "main.js.map": "/react-circle-prog-widget/static/js/main.416c5acb.chunk.js.map",
     "runtime-main.js": "/react-circle-prog-widget/static/js/runtime-main.a73ae7a2.js",
     "runtime-main.js.map": "/react-circle-prog-widget/static/js/runtime-main.a73ae7a2.js.map",
     "static/js/2.597de7fa.chunk.js": "/react-circle-prog-widget/static/js/2.597de7fa.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.61e04e12.chunk.js": "/react-circle-prog-widget/static/js/3.61e04e12.chunk.js",
     "static/js/3.61e04e12.chunk.js.map": "/react-circle-prog-widget/static/js/3.61e04e12.chunk.js.map",
     "index.html": "/react-circle-prog-widget/index.html",
-    "static/css/main.46db552a.chunk.css.map": "/react-circle-prog-widget/static/css/main.46db552a.chunk.css.map",
+    "static/css/main.fdfb1805.chunk.css.map": "/react-circle-prog-widget/static/css/main.fdfb1805.chunk.css.map",
     "static/js/2.597de7fa.chunk.js.LICENSE.txt": "/react-circle-prog-widget/static/js/2.597de7fa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a73ae7a2.js",
     "static/js/2.597de7fa.chunk.js",
-    "static/css/main.46db552a.chunk.css",
-    "static/js/main.8cab70c8.chunk.js"
+    "static/css/main.fdfb1805.chunk.css",
+    "static/js/main.416c5acb.chunk.js"
   ]
 }
