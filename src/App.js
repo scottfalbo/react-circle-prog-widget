@@ -8,6 +8,7 @@ export class App extends Component {
     showAbout: false
   };
 
+  // Toggles the AboutMe window on and off.  This code is unrelated to the widget.
   handleSubmission() {
     this.setState({
       showAbout: this.state.showAbout ? false : true

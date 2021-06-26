@@ -10,10 +10,12 @@ export class Controller extends Component {
         animateDisplay: false
     }
 
+    // Function passed to the child components to change this components state.value.
     updateValue = (input) => {
         this.setState({ value: input });
     }
 
+    // Function passed to child components to toggle the bar animation.
     animateDisplay = () => {
         this.setState({ animateDisplay: this.state.animateDisplay ? false : true })
     }

@@ -15,15 +15,17 @@ export class DataDisplay extends Component {
     };
   }
 
+  //Mounts an interval in the app.  This is used for both the counting number and moving bar.
   componentDidMount() {
     //Set interval speed here to control how quickly the display counts
     this.intervalId = setInterval(() => this.ticker(), 25);
   }
-
   componentWillUnmount() {
     clearInterval(this.intervalId);
   }
 
+  // Increments up to the value passed from the input component.
+  // Updates the counter and bar class at each value until it reaches the input value.
   ticker = () => {
     this.setState ({ value: this.props.value });
     if (this.props.animateDisplay && this.state.output <= this.state.value - 1) {
@@ -44,6 +46,7 @@ export class DataDisplay extends Component {
     }
   }
 
+  // Sets the class for the progress bar at each interval
   progressBar = () => {
     if (this.state.output < 51)
       this.setState({ bar: 'progress-circle p' + this.state.output });
@@ -51,6 +54,7 @@ export class DataDisplay extends Component {
       this.setState({ bar: 'progress-circle over50 p' + this.state.output });
   }
 
+  // Sets color for bar and counter based on value.  These can be customized.
   displayColor = (value) => {
     let color;
     if (value >= 0 && value < 25)

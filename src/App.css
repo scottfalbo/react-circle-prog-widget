@@ -1,3 +1,5 @@
+/* This is the layout for the sample app, it doesn't effect the widget components in anyway.  Those style sheets are imported directly into the components. */
+
 html {
   background-color: #000;
 }
@@ -150,6 +152,3 @@ main > button {
   position: relative;
   left: 70%;
 }
-
-/* font-family: 'Exo', sans-serif;
-font-family: 'Montserrat', sans-serif; */

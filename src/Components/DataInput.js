@@ -10,12 +10,18 @@ export class DataInput extends Component {
         };
     }
 
+    // Handles the input from the input form, updating state.query as the user types.
+    // This currently has in implementation in the sample app.
+    // To use the input form un-comment the element tag in render().
     handleInput(e) {
         this.setState({
             query: e.target.value
         });
     }
 
+    // Handles the button click.  Sends the state.query to a helper function that will retrieve our value.
+    // For the sample App it is just a random number generator.  
+    // If you want to use custom input rename fakeQuery(query) and start your business logic there.
     handleSubmission() {
             this.fakeQuery(this.state.query);
     }
@@ -24,6 +30,7 @@ export class DataInput extends Component {
         // Replace the random number generator with your business logic
         const result = Math.floor((Math.random() * (100 - 1) + 1));
 
+        // Keep these lines, they set the controller component state.
         this.props.updateValue(result);
         this.props.animateDisplay();
         this.setState({ query: '' });
