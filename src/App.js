@@ -57,7 +57,7 @@ export class App extends Component {
               <br/>
               Thanks for looking, let's write some spells!
             </article>
-            <button className="make-box" onClick={this.handleSubmission.bind(this)}>🗙 close</button>
+            <button className="make-box" onClick={this.handleSubmission.bind(this)}>close</button>
           </section>
         </div>
       </main>

@@ -67,8 +67,8 @@ ul {
   transform: translateX(-50%);
   background-color: #fff;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: min-content min-content;
+  grid-template-columns: 2% 90% 8%;
+  grid-template-rows: min-content min-content 50px;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
@@ -77,7 +77,7 @@ ul {
 }
 
 .about-me > div:first-child {
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -86,7 +86,6 @@ ul {
   .about-me > div:first-child figure {
     grid-column: 1/2;
     grid-row: 1/2;
-    text-align: center;
   }
     figure img {
       border-radius: 50%;
@@ -99,11 +98,16 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
-    text-align: center;
+
   }
     .social ul:first-child{
       grid-column: 1/2;
       grid-row: 1/2;
+    }
+    .social a {
+      font-family: 'Exo', sans-serif;
+      text-decoration: none;
+      font-size: 1.1em;
     }
     .social ul:last-child{
       grid-column: 1/2;
@@ -117,15 +121,22 @@ ul {
       width: 60px;
     }
 .about-me button {
+  grid-column: 2/3;
+  grid-row: 3/4;
   width: 100px;
   height: 40px;
   line-height: 20px;
+  margin-left: 70%;
 }
 
-.about-me > p {
-  grid-column: 1/2;
+.about-me > article {
+  padding: 10px;
+  grid-column: 2/3;
   grid-row: 2/3;
   white-space: pre-wrap;
+  overflow-y: scroll;
+  height: 300px;
+  width: 100%;
 }
 
 .hide-me {
@@ -139,3 +150,6 @@ main > button {
   position: relative;
   left: 70%;
 }
+
+/* font-family: 'Exo', sans-serif;
+font-family: 'Montserrat', sans-serif; */
