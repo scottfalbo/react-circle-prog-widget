@@ -56,8 +56,6 @@ export class App extends Component {
               While I enjoy puzzling and problem solving I'm also a career artist with a passion for visual creation.  With a firm understanding of composition and color theory I also enjoy building attractive, accessible and functional front ends.
               <br/>
               Thanks for looking, let's write some spells!
-
-          
             </article>
             <button className="make-box" onClick={this.handleSubmission.bind(this)}>🗙 close</button>
           </section>
