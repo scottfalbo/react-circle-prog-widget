@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-circle-prog-widget/static/css/main.f8374db6.chunk.css",
-    "main.js": "/react-circle-prog-widget/static/js/main.ddea4f7a.chunk.js",
-    "main.js.map": "/react-circle-prog-widget/static/js/main.ddea4f7a.chunk.js.map",
+    "main.js": "/react-circle-prog-widget/static/js/main.e15647fc.chunk.js",
+    "main.js.map": "/react-circle-prog-widget/static/js/main.e15647fc.chunk.js.map",
     "runtime-main.js": "/react-circle-prog-widget/static/js/runtime-main.a73ae7a2.js",
     "runtime-main.js.map": "/react-circle-prog-widget/static/js/runtime-main.a73ae7a2.js.map",
     "static/js/2.597de7fa.chunk.js": "/react-circle-prog-widget/static/js/2.597de7fa.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a73ae7a2.js",
     "static/js/2.597de7fa.chunk.js",
     "static/css/main.f8374db6.chunk.css",
-    "static/js/main.ddea4f7a.chunk.js"
+    "static/js/main.e15647fc.chunk.js"
   ]
 }
