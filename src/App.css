@@ -46,79 +46,12 @@ button {
   background-color: #fff;
 }
 
-/*  about me popup */
-
-ul {
-  list-style: none;
-  padding: 5px;
-}
-
-.screen-dim {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100vh;
-  background-color:rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-
-.about-me {
-  position: fixed;
-  top: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
+.link-button {
+  width: 200px;
+  margin: 10px auto;
   text-align: center;
 }
 
-    figure img {
-      border-radius: 50%;
-      border: 2px solid #000;
-    }
-
-    .social a {
-      font-family: 'Exo', sans-serif;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-
-    .social ul:last-child > li{
-      display: inline-block;
-      margin: 0px 10px;
-    }
-    .social img {
-      width: 60px;
-    }
-.about-me button {
-
-  width: 100px;
-  height: 40px;
-  line-height: 20px;
-  margin-left: 70%;
-}
-
-.about-me > article {
-  padding: 10px;
-  white-space: pre-wrap;
-  overflow-y: scroll;
-  height: 300px;
-  width: 90%;
-  text-align: left;
-}
-
-.hide-me {
-  visibility: hidden;
-  height: 0px;
-}
-
-main > button {
-  width: 100px;
-  height: 40px;
-  position: relative;
-  left: 70%;
+a {
+  text-decoration: none;
 }
