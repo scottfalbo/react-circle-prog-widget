@@ -99,7 +99,7 @@ This widget was created using React and displays a circular progression bar that
     + Created and deployed.
 
 ## Author
-Scott Falbo
+[Scott Falbo](https://www.scottfalbo.com)
 
 ## Attributions
 + [GhPage React Deployment](https://www.pluralsight.com/guides/deploying-react-on-github-pages)
