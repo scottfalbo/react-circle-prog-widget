@@ -27,7 +27,7 @@ export class DataDisplay extends Component {
   // Increments up to the value passed from the input component.
   // Updates the counter and bar class at each value until it reaches the input value.
   ticker = () => {
-    this.setState ({ value: this.props.value });
+    this.tickerCount();
     if (this.props.animateDisplay && this.state.output <= this.state.value - 1) {
       this.setState(prev => ({
         output: prev.output + 1,
@@ -44,6 +44,10 @@ export class DataDisplay extends Component {
       });
       this.props.toggleAnimation();
     }
+  }
+
+  tickerCount = () => {
+    this.setState ({ value: this.props.value });
   }
 
   // Sets the class for the progress bar at each interval
