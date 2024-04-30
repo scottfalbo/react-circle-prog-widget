@@ -2,12 +2,6 @@
 
 ---
 
-### Sample Deployment
-
-[scottfalbo.github.io/react-circle-prog-widget](https://scottfalbo.github.io/react-circle-prog-widget)
-
----
-
 ## Summary
 
 
